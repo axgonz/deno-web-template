@@ -4,7 +4,7 @@ Description=Deno WebApp:8080 - Hello I am <hostname>.
 [Service]
 User=root
 WorkingDirectory=/opt/deno-helloiam/
-ExecStart=deno run --allow-net --allow-read /etc/hostname main.ts 
+ExecStart=deno run --allow-net --allow-read main.ts 
 Restart=always
 
 [Install]
